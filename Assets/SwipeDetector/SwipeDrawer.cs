@@ -4,6 +4,7 @@ public class SwipeDrawer : MonoBehaviour
 {
     private LineRenderer lineRenderer;
     public Rigidbody rigidBall;
+    
 
     private float zOffset = 10;
 
@@ -20,5 +21,7 @@ public class SwipeDrawer : MonoBehaviour
         positions[1] = Camera.main.ScreenToWorldPoint(new Vector3(data.EndPosition.x, data.EndPosition.y, zOffset));
         lineRenderer.positionCount = 2;
         lineRenderer.SetPositions(positions);
+        rigidBall.useGravity = true;
+        rigidBall.AddForce(0, 0, 20);
     }
 }
