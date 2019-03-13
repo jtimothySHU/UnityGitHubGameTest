@@ -3,6 +3,7 @@
 public class SwipeDrawer : MonoBehaviour
 {
     private LineRenderer lineRenderer;
+    public Rigidbody rigidBall;
 
     private float zOffset = 10;
 
