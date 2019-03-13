@@ -320,6 +320,7 @@ GameObject:
   - component: {fileID: 518681548}
   - component: {fileID: 518681547}
   - component: {fileID: 518681549}
+  - component: {fileID: 518681550}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -411,51 +412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85db8d02eaa5fc849b6752a5e1173ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxObjectSpeed: 40
-  flickSpeed: 0.4
-  respawnName: 
-  howClose: 9.5
-  startTime: 0
-  endTime: 0
-  swipeDistance: 0
-  swipeTime: 0
-  startPos: {x: 0, y: 0}
-  endPos: {x: 0, y: 0}
-  tempTime: 0
-  flickLength: 0
-  objectVelocity: 0
-  objectSpeed: 0
-  angle: {x: 0, y: 0, z: 0}
-  thrown: 0
-  holding: 0
-  newPosition: {x: 0, y: 0, z: 0}
-  velocity: {x: 0, y: 0, z: 0}
 --- !u!54 &518681548
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -467,7 +423,7 @@ Rigidbody:
   m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -484,7 +440,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351c242cfcbba454a82eadce5eba3e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballRB: {fileID: 518681548}
+--- !u!114 &518681550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518681542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d84540da2abe4312a1b6b67ce79edaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidBall: {fileID: 518681548}
+  startTouch: {x: 0, y: 0}
+  endTouch: {x: 0, y: 0}
+  xDistance: 0
+  yDistance: 0
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0

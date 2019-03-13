@@ -45,12 +45,13 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-
+        /*
         // if touch is anywhere, then move forward
         if (Input.touchCount > 0)
         {
            // Touch touch = Input.GetTouch(0);
             rb.AddForce(0, 0, 20);
         }
+        */
     }
 }
