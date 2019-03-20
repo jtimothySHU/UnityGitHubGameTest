@@ -5,24 +5,22 @@ using UnityEngine;
 public class followBall : MonoBehaviour
 {
 
-    public GameObject ball;
     public Transform player;
 
-    public Vector3 offset;
+    public Vector3 movingOffset;
+    public Vector3 FIRSTOFFSET;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        transform.position = player.position + FIRSTOFFSET;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.GetKey("w"))
-        {
-            transform.position = player.position + (new Vector3(0, 0, 4));
-        }
+        transform.position = player.position + movingOffset;
+
     }
 }
