@@ -10,7 +10,9 @@ public class throwBall : MonoBehaviour
     public Vector2 endTouch;
     public float xDistance;
     public float yDistance;
-    const float XFORCE = 4;
+    public float xForce;
+    public float yForce;
+    public float zForce;
 
 
     // change
@@ -52,7 +54,11 @@ public class throwBall : MonoBehaviour
             Debug.Log(xDistance);
             yDistance = endTouch.y - endTouch.x;
 
-            rigidBall.AddForce(0, yDistance * 0.5f, XFORCE);
+            xForce = xDistance * 0.1f;
+            yForce = yDistance * 0.3f;
+            zForce = yDistance * 0.8f;
+
+            rigidBall.AddForce(xForce, yForce, zForce);
 
         }
 
