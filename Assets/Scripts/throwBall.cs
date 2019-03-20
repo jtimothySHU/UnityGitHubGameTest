@@ -55,7 +55,7 @@ public class throwBall : MonoBehaviour
             yDistance = endTouch.y - endTouch.x;
 
             xForce = xDistance * 0.1f;
-            yForce = yDistance * 0.1f;
+            yForce = yDistance * 0.05f;
             zForce = yDistance * 0.8f;
 
             rigidBall.AddForce(xForce, yForce, zForce);
