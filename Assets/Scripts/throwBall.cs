@@ -38,25 +38,26 @@ public class throwBall : MonoBehaviour
                     // sets the start of the touch to the current touch position
                     startTouch = touch.position;
                     // used for debugging
-                    Debug.Log(startTouch);
+                   // Debug.Log(startTouch);
                     break;
 
                 case TouchPhase.Ended:
                     // sets the end of the touch to the last touched position
                     endTouch = touch.position;
-                    Debug.Log(endTouch);
+                  //  Debug.Log(endTouch);
                     break;
 
             }
 
             xDistance = endTouch.x - startTouch.x;
-            Debug.Log(" space ");
-            Debug.Log(xDistance);
             yDistance = startTouch.y - endTouch.x;
+
+            Debug.Log(startTouch.x); 
+            Debug.Log(endTouch.x);
 
             xForce = xDistance * 0.1f;
             yForce = yDistance * 0.1f;
-            zForce = yDistance * 0.1f;
+            zForce = yDistance * -0.1f;
 
             rigidBall.AddForce(xForce, yForce, zForce);
 
