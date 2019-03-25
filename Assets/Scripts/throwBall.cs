@@ -52,11 +52,11 @@ public class throwBall : MonoBehaviour
             xDistance = endTouch.x - startTouch.x;
             Debug.Log(" space ");
             Debug.Log(xDistance);
-            yDistance = endTouch.y - endTouch.x;
+            yDistance = startTouch.y - endTouch.x;
 
             xForce = xDistance * 0.1f;
-            yForce = yDistance * 0.3f;
-            zForce = yDistance * 0.8f;
+            yForce = yDistance * 0.1f;
+            zForce = yDistance * 0.1f;
 
             rigidBall.AddForce(xForce, yForce, zForce);
 
