@@ -13,7 +13,6 @@ public class throwBall : MonoBehaviour
     public float xForce;
     public float yForce;
     public float zForce;
-    public float midScreen;
 
 
     // change
@@ -50,12 +49,12 @@ public class throwBall : MonoBehaviour
 
             }
 
-            // touch range goes from 0 to ~265 on my phone
+            // touch range goes from 0 to 266 on my phone
             // need to fix code so bigger than 
 
             xDistance = endTouch.x - startTouch.x;
             yDistance = startTouch.y - endTouch.x;
-            midScreen = Screen.width / 2.0f;
+          
 
             Debug.Log("StartTouchX : " + startTouch.x); 
             Debug.Log("EndTouchX: " + endTouch.x);
@@ -63,7 +62,12 @@ public class throwBall : MonoBehaviour
             // script for showing screen width.
             Debug.Log("Screen Width : " + Screen.width);
 
-            xForce = xDistance * 0.1f;
+
+            if (startTouch.x > endTouch.x)
+                xForce = xDistance * -0.1f;
+            if (startTouch.x < endTouch.x)
+                xForce = xDistance * 0.1f;
+
             yForce = yDistance * 0.1f;
             zForce = yDistance * -0.1f;
 
