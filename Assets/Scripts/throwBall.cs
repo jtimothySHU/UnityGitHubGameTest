@@ -69,7 +69,7 @@ public class throwBall : MonoBehaviour
                 xForce = xDistance * 0.1f;
 
             yForce = yDistance * 0.1f;
-            zForce = yForce * 1.5f;
+            zForce = yForce * 8;
 
             rigidBall.AddForce(xForce, yForce, zForce);
 
