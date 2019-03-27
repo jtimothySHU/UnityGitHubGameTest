@@ -61,6 +61,7 @@ public class throwBall : MonoBehaviour
 
             // script for showing screen width.
             Debug.Log("Screen Width : " + Screen.width);
+            Debug.Log("Screen Height: " + Screen.height);
 
 
             if (startTouch.x > endTouch.x)
