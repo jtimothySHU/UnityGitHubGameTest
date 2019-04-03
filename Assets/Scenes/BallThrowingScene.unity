@@ -539,6 +539,9 @@ MonoBehaviour:
   xForce: 0
   yForce: 0
   zForce: 0
+  touchTimeStart: 0
+  touchTimeFinish: 0
+  timeInterval: 0
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,7 +725,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536336677}
   m_LocalRotation: {x: -0.05722323, y: -0, z: -0, w: 0.9983614}
-  m_LocalPosition: {x: 0.06, y: -0.75, z: -15.83}
+  m_LocalPosition: {x: 0, y: 0, z: -15.83}
   m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1083,13 +1086,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327275852}
-  m_LocalRotation: {x: -0.057224292, y: 0, z: 0, w: 0.99836135}
-  m_LocalPosition: {x: 0.12, y: -1.36, z: -13.54}
-  m_LocalScale: {x: 5, y: 1, z: 5}
+  m_LocalRotation: {x: -0.42261827, y: 0, z: 0, w: 0.9063079}
+  m_LocalPosition: {x: 0.12, y: 1.5, z: 3.8}
+  m_LocalScale: {x: 15, y: 1, z: 15}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: -6.561, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -50, y: 0, z: 0}
 --- !u!1 &1616407276
 GameObject:
   m_ObjectHideFlags: 0
