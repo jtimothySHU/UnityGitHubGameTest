@@ -401,9 +401,10 @@ GameObject:
   - component: {fileID: 518681549}
   - component: {fileID: 518681550}
   - component: {fileID: 518681551}
+  - component: {fileID: 518681552}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -556,6 +557,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theBall: {fileID: 518681542}
+  theColor: {fileID: 0}
+  classicBall: {fileID: 2100000, guid: bedefed38834a3740b669ea78e3d284b, type: 2}
+  redBall: {fileID: 2100000, guid: 23317ecdbef054547ba60b1e0dfd0a5c, type: 2}
+  yellowBall: {fileID: 2100000, guid: 7682012bd30a0412881da532f9b648a1, type: 2}
+  greenBall: {fileID: 2100000, guid: e59fd4284adca4b97949852dbb9d338a, type: 2}
+  blueBall: {fileID: 2100000, guid: 9ab47b170efa14c4eb8f4fb2983ee294, type: 2}
+  purpleBall: {fileID: 2100000, guid: 234c66543059145608688251f847e4e2, type: 2}
+  griffinBall: {fileID: 2100000, guid: d841a91d6b90946b5a1393464f9ba828, type: 2}
+  starsBall: {fileID: 0}
+  galaxyBall: {fileID: 2100000, guid: 4a7a410c9da2f485c9f2241811882157, type: 2}
+--- !u!114 &518681552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518681542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d88aee1d2eaae46169963ad2fc82eb1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0

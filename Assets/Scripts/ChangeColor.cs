@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ChangeColor : MonoBehaviour
 {
-    public static Material ballColor;
+    static public int colorChoice;
 
-    // Update is called once per frame
-    public void ChangeTheColor(Material thisColor)
+    // on click
+    public void ChangeTheColor(int thisColor)
     {
-        ballColor = thisColor;
+        colorChoice = thisColor;   
     }
 }
