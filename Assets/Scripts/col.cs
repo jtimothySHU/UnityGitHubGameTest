@@ -7,6 +7,7 @@ public class col : MonoBehaviour
     public UnityEngine.UI.Text text;
 
     public GameObject theBall;
+    public Rigidbody ballBody;
 
     public int count;
     public int total;
@@ -27,6 +28,7 @@ public class col : MonoBehaviour
         {
             //Destroy(col.gameObject);
             theBall.transform.position = startingPoint;
+            ballBody.velocity = Vector3.zero;
             total += count;
             text.text = "Score: " + count.ToString();
         }
