@@ -841,7 +841,7 @@ MonoBehaviour:
   blueBall: {fileID: 2100000, guid: 9ab47b170efa14c4eb8f4fb2983ee294, type: 2}
   purpleBall: {fileID: 2100000, guid: 234c66543059145608688251f847e4e2, type: 2}
   griffinBall: {fileID: 2100000, guid: d841a91d6b90946b5a1393464f9ba828, type: 2}
-  starsBall: {fileID: 0}
+  starsBall: {fileID: 2100000, guid: bacb790fb6bb94407972fa889cf982aa, type: 2}
   galaxyBall: {fileID: 2100000, guid: 4a7a410c9da2f485c9f2241811882157, type: 2}
 --- !u!114 &518681552
 MonoBehaviour:

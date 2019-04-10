@@ -45,7 +45,8 @@ public class getColor : MonoBehaviour
                 theColor = griffinBall;
                 break;
             case 8:
-                    // i broke the stars ball, i'll add this once it is fixed
+                theColor = starsBall;
+                break;
             case 9:
                 theColor = galaxyBall;
                 break;
