@@ -6,7 +6,7 @@ public class col : MonoBehaviour
 {
     public UnityEngine.UI.Text text;
 
-    int count;
+    public int count;
 
     private void Start()
     {
