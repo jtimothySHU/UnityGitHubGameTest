@@ -6,13 +6,15 @@ public class col : MonoBehaviour
 {
     public UnityEngine.UI.Text text;
 
+    public GameObject theBall;
+
     public int count;
+    public int total;
 
     private void Start()
     {
         //Look buddy, I don't care about 'traditional' naming
         //conventions
-        count = 0;
         text.text = "Score: " + count.ToString();
     }
 
@@ -20,8 +22,9 @@ public class col : MonoBehaviour
     {
         if (col.gameObject.name == "Sphere")
         {
-            Destroy(col.gameObject);
-            count += 20;
+            //Destroy(col.gameObject);
+            theBall.transform.Translate(0f, 3.904f, -45);
+            total += count;
             text.text = "Score: " + count.ToString();
         }
     }
