@@ -13,7 +13,7 @@ public class col : MonoBehaviour
         //Look buddy, I don't care about 'traditional' naming
         //conventions
         count = 0;
-        text.text = "Big Dick Points: " + count.ToString();
+        text.text = "Score: " + count.ToString();
     }
 
     private void OnCollisionEnter(Collision col)
@@ -22,7 +22,7 @@ public class col : MonoBehaviour
         {
             Destroy(col.gameObject);
             count += 20;
-            text.text = "Big Dick Points: " + count.ToString();
+            text.text = "Score: " + count.ToString();
         }
     }
 }
