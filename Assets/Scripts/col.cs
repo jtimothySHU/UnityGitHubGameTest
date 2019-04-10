@@ -16,6 +16,7 @@ public class col : MonoBehaviour
         //Look buddy, I don't care about 'traditional' naming
         //conventions
         text.text = "Score: " + count.ToString();
+        total = 0;
     }
 
     private void OnCollisionEnter(Collision col)
