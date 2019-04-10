@@ -29,6 +29,7 @@ public class col : MonoBehaviour
             //Destroy(col.gameObject);
             theBall.transform.position = startingPoint;
             ballBody.velocity = Vector3.zero;
+            ballBody.Sleep();
             total += count;
             text.text = "Score: " + count.ToString();
         }
