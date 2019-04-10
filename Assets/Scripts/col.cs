@@ -11,6 +11,8 @@ public class col : MonoBehaviour
     public int count;
     public int total;
 
+    public Vector3 startingPoint = new Vector3(0f, 3.904f, -45f);
+
     private void Start()
     {
         //Look buddy, I don't care about 'traditional' naming
@@ -24,7 +26,7 @@ public class col : MonoBehaviour
         if (col.gameObject.name == "Sphere")
         {
             //Destroy(col.gameObject);
-            theBall.transform.Translate(0f, 3.904f, -45);
+            theBall.transform.position = startingPoint;
             total += count;
             text.text = "Score: " + count.ToString();
         }

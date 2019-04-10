@@ -218,7 +218,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
+  theBall: {fileID: 518681542}
   count: 60
+  total: 0
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,9 +490,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8068b8cf0f1dd430abe664c81d7838d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 306570390}
-  fowardForce: 20
-  sideForce: 15
 --- !u!1 &358829827
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,7 +596,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
+  theBall: {fileID: 518681542}
   count: 40
+  total: 0
 --- !u!1 &419123563
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,7 +705,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
+  theBall: {fileID: 518681542}
   count: 50
+  total: 0
 --- !u!1 &518681542
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,7 +1198,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
+  theBall: {fileID: 518681542}
   count: 20
+  total: 0
 --- !u!1 &1030458569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,7 +1490,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
+  theBall: {fileID: 518681542}
   count: 20
+  total: 0
 --- !u!136 &1327275854
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1665,7 +1672,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
+  theBall: {fileID: 518681542}
   count: 10
+  total: 0
 --- !u!1 &1616407276
 GameObject:
   m_ObjectHideFlags: 0
