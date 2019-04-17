@@ -10,9 +10,11 @@ public class throwBall : MonoBehaviour
     public Vector2 endTouch;
     public float xDistance;
     public float yDistance;
-    public float xForce;
-    public float yForce;
-    public float zForce;
+    public float xForce = 0;
+    public float yForce = 0;
+    public float zForce = 0;
+    public float touchTimeStart, touchTimeFinish, timeInterval; // to calculate swipe time
+
 
 
     // change
@@ -25,43 +27,38 @@ public class throwBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // If the touchCount is greater than 0, the device detects a touch ouccured
-        if (Input.touchCount > 0)
+        // if you touch the screen
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
-            Touch touch = Input.GetTouch(0);
 
-            // touch phases are began, moved, ended, cancelled, stationary
-            switch (touch.phase)
-            {
-                case TouchPhase.Began:
-                    rigidBall.useGravity = true;
-                    // sets the start of the touch to the current touch position
-                    startTouch = touch.position;
-                    // used for debugging
-                   // Debug.Log(startTouch);
-                    break;
+            // getting touch position and marking time when you touch the screen
+            touchTimeStart = Time.time;
+            startTouch = Input.GetTouch(0).position;
+        }
 
-                case TouchPhase.Ended:
-                    // sets the end of the touch to the last touched position
-                    endTouch = touch.position;
-                  //  Debug.Log(endTouch);
-                    break;
 
-            }
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+        {
 
-            // touch range goes from 0 to 266 on my phone
-            // need to fix code so bigger than 
+            // marking time when you release it
+            touchTimeFinish = Time.time;
+
+            // calculate swipe time interval 
+            timeInterval = touchTimeFinish - touchTimeStart;
+
+            // getting release finger position
+            endTouch = Input.GetTouch(0).position;
 
             xDistance = endTouch.x - startTouch.x;
-            yDistance = startTouch.y - endTouch.x;
-          
+            yDistance = endTouch.y - startTouch.y;
 
-            Debug.Log("StartTouchX : " + startTouch.x); 
-            Debug.Log("EndTouchX: " + endTouch.x);
+
+            //Debug.Log("StartTouchX : " + startTouch.x);
+            //Debug.Log("EndTouchX: " + endTouch.x);
 
             // script for showing screen width.
-            Debug.Log("Screen Width : " + Screen.width);
-            Debug.Log("Screen Height: " + Screen.height);
+            //Debug.Log("Screen Width : " + Screen.width);
+           // Debug.Log("Screen Height: " + Screen.height);
 
 
             if (startTouch.x > endTouch.x)
@@ -69,12 +66,17 @@ public class throwBall : MonoBehaviour
             if (startTouch.x < endTouch.x)
                 xForce = xDistance * 0.1f;
 
-            yForce = yDistance * 0.1f;
-            zForce = yForce * 8;
+            yForce = yDistance * 0.3f;
+            zForce = yForce * 3f;
 
-            rigidBall.AddForce(xForce, yForce, zForce);
+            rigidBall.AddForce(xForce, yForce, zForce / timeInterval);
+
+
+
 
         }
 
     }
+
+
 }
