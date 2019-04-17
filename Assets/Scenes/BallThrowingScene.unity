@@ -219,8 +219,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
   theBall: {fileID: 518681542}
+  ballBody: {fileID: 0}
   count: 60
   total: 0
+  startingPoint: {x: 0, y: 3.904, z: -45}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,8 +599,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
   theBall: {fileID: 518681542}
+  ballBody: {fileID: 0}
   count: 40
   total: 0
+  startingPoint: {x: 0, y: 3.904, z: -45}
 --- !u!1 &419123563
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,8 +710,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
   theBall: {fileID: 518681542}
+  ballBody: {fileID: 0}
   count: 50
   total: 0
+  startingPoint: {x: 0, y: 3.904, z: -45}
 --- !u!1 &518681542
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +732,7 @@ GameObject:
   - component: {fileID: 518681550}
   - component: {fileID: 518681551}
   - component: {fileID: 518681552}
+  - component: {fileID: 518681553}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Player
@@ -903,6 +910,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d88aee1d2eaae46169963ad2fc82eb1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &518681553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518681542}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593df44c1b1454f7493a792a7547d89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  theBall: {fileID: 0}
+  ballBody: {fileID: 518681548}
+  count: 0
+  total: 0
+  startingPoint: {x: 0, y: 3.904, z: -45}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,8 +1224,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
   theBall: {fileID: 518681542}
+  ballBody: {fileID: 0}
   count: 20
   total: 0
+  startingPoint: {x: 0, y: 3.904, z: -45}
 --- !u!1 &1030458569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1491,8 +1518,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
   theBall: {fileID: 518681542}
+  ballBody: {fileID: 0}
   count: 20
   total: 0
+  startingPoint: {x: 0, y: 3.904, z: -45}
 --- !u!136 &1327275854
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1673,8 +1702,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
   theBall: {fileID: 518681542}
+  ballBody: {fileID: 0}
   count: 10
   total: 0
+  startingPoint: {x: 0, y: 3.904, z: -45}
 --- !u!1 &1616407276
 GameObject:
   m_ObjectHideFlags: 0
