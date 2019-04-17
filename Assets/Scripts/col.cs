@@ -18,7 +18,7 @@ public class col : MonoBehaviour
     {
         //Look buddy, I don't care about 'traditional' naming
         //conventions
-        text.text = "Score: " + count.ToString();
+        text.text = "Score: " + total.ToString();
         total = 0;
     }
 
@@ -31,7 +31,7 @@ public class col : MonoBehaviour
             ballBody.velocity = Vector3.zero;
             ballBody.Sleep();
             total += count;
-            text.text = "Score: " + count.ToString();
+            text.text = "Score: " + total.ToString();
         }
     }
 }
