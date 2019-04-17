@@ -53,12 +53,12 @@ public class throwBall : MonoBehaviour
             yDistance = endTouch.y - startTouch.y;
 
 
-            Debug.Log("StartTouchX : " + startTouch.x);
-            Debug.Log("EndTouchX: " + endTouch.x);
+            //Debug.Log("StartTouchX : " + startTouch.x);
+            //Debug.Log("EndTouchX: " + endTouch.x);
 
             // script for showing screen width.
-            Debug.Log("Screen Width : " + Screen.width);
-            Debug.Log("Screen Height: " + Screen.height);
+            //Debug.Log("Screen Width : " + Screen.width);
+           // Debug.Log("Screen Height: " + Screen.height);
 
 
             if (startTouch.x > endTouch.x)
