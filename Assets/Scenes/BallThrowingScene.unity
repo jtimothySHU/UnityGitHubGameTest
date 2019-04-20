@@ -219,8 +219,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
   theBall: {fileID: 518681542}
+  rb: {fileID: 0}
   count: 60
+  dm: {fileID: 0}
   startingPoint: {x: 0, y: 3.904, z: -45}
+  startingRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,8 +691,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
   theBall: {fileID: 518681542}
+  rb: {fileID: 0}
   count: 40
+  dm: {fileID: 0}
   startingPoint: {x: 0, y: 3.904, z: -45}
+  startingRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &419123563
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,8 +803,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
   theBall: {fileID: 518681542}
+  rb: {fileID: 0}
   count: 50
+  dm: {fileID: 0}
   startingPoint: {x: 0, y: 3.904, z: -45}
+  startingRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &436550079
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,8 +1065,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 0}
   theBall: {fileID: 0}
+  rb: {fileID: 0}
   count: 0
+  dm: {fileID: 0}
   startingPoint: {x: 0, y: 3.904, z: -45}
+  startingRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,8 +1366,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
   theBall: {fileID: 518681542}
+  rb: {fileID: 0}
   count: 20
+  dm: {fileID: 436550081}
   startingPoint: {x: 0, y: 3.904, z: -45}
+  startingRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1030458569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,8 +1753,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
   theBall: {fileID: 518681542}
+  rb: {fileID: 0}
   count: 20
+  dm: {fileID: 436550081}
   startingPoint: {x: 0, y: 3.904, z: -45}
+  startingRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!136 &1327275854
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2103,8 +2121,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
   theBall: {fileID: 518681542}
+  rb: {fileID: 0}
   count: 10
+  dm: {fileID: 436550081}
   startingPoint: {x: 0, y: 3.904, z: -45}
+  startingRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1616407276
 GameObject:
   m_ObjectHideFlags: 0
