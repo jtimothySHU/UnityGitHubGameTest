@@ -985,7 +985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 0}
   theBall: {fileID: 0}
-  ballBody: {fileID: 518681548}
+  ballBody: {fileID: 0}
   count: 0
   total: 0
   startingPoint: {x: 0, y: 3.904, z: -45}
@@ -1190,6 +1190,7 @@ GameObject:
   - component: {fileID: 646709701}
   - component: {fileID: 646709700}
   - component: {fileID: 646709699}
+  - component: {fileID: 646709703}
   m_Layer: 0
   m_Name: backBox
   m_TagString: Untagged
@@ -1269,6 +1270,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &646709703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646709698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593df44c1b1454f7493a792a7547d89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  theBall: {fileID: 518681542}
+  ballBody: {fileID: 0}
+  count: 0
+  total: 0
+  startingPoint: {x: 0, y: 3.904, z: -45}
 --- !u!1 &956073676
 GameObject:
   m_ObjectHideFlags: 0
