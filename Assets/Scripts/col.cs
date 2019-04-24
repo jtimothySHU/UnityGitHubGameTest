@@ -7,19 +7,22 @@ public class col : MonoBehaviour
     public UnityEngine.UI.Text text;
 
     public GameObject theBall;
-    public Rigidbody ballBody;
-
+    public Rigidbody rb;
+   
     public int count;
-    public int total;
+    public detectionManager dm;
 
     public Vector3 startingPoint = new Vector3(0f, 3.904f, -45f);
+    public Quaternion startingRotation = new Quaternion(0,0,0,0);
 
     private void Start()
     {
-        //Look buddy, I don't care about 'traditional' naming
-        //conventions
-        text.text = "Score: " + total.ToString();
-        total = 0;
+        /*
+         * Look buddy, I don't care about 'traditional' naming
+         * conventions
+         */
+        text.text = "Score: " + dm.score.ToString();
+        dm.score = 0;
     }
 
     private void OnCollisionEnter(Collision col)
@@ -28,10 +31,13 @@ public class col : MonoBehaviour
         {
             //Destroy(col.gameObject);
             theBall.transform.position = startingPoint;
-            ballBody.velocity = Vector3.zero;
-            ballBody.Sleep();
-            total += count;
-            text.text = "Score: " + total.ToString();
+            theBall.transform.rotation = startingRotation;
+            // ballBody.velocity = Vector3.zero;
+            // ballBody.Sleep();
+            theBall.GetComponent<Rigidbody>().Sleep();
+            Debug.Log("Count: " + count);
+            dm.score += count;
+            text.text = "Score: " + dm.score.ToString();
         }
     }
 }
