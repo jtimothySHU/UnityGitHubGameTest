@@ -58,20 +58,42 @@ public class throwBall : MonoBehaviour
 
             // script for showing screen width.
             //Debug.Log("Screen Width : " + Screen.width);
-           // Debug.Log("Screen Height: " + Screen.height);
-
-
-            if (startTouch.x > endTouch.x)
-                xForce = xDistance * -0.1f;
-            if (startTouch.x < endTouch.x)
-                xForce = xDistance * 0.1f;
+            // Debug.Log("Screen Height: " + Screen.height);
 
             yForce = yDistance * 0.3f;
-            zForce = yForce * 3f;
+            zForce = yForce * 3.5f;
+            xForce = xDistance * 0.5f;
 
+
+            // original code
+            /*
+            if (startTouch.x >= endTouch.x)
+                xForce = xDistance * -0.2f;
+            if (startTouch.x < endTouch.x)
+                xForce = xDistance * 0.2f;
+                */
+
+
+            /*
             rigidBall.AddForce(xForce, yForce, zForce / timeInterval);
+            */
 
+            if (startTouch.x >= endTouch.x)
+            {
+                rigidBall.AddForce(xForce, yForce, zForce / timeInterval);
+                rigidBall.AddForce(Vector3.left);
+                
+                //rigidBall.velocity.x
+                Debug.Log("going left" + -xForce);
+                Debug.Log("xDistance: " + xDistance);
+            }
+            if (startTouch.x < endTouch.x)
+            {
+                rigidBall.AddForce(xForce, yForce, zForce / timeInterval);
+                Debug.Log("going right");
+                Debug.Log("xDistance: " + xDistance);
 
+            }
 
 
         }
