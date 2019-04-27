@@ -82,7 +82,7 @@ public class throwBall : MonoBehaviour
             {
                 //rigidBall.AddForce(xForce, yForce, zForce / timeInterval);
                 //rigidBall.AddForce(Vector3.left);
-                rigidBall.velocity = new Vector3(xForce * -1, yForce, zForce / timeInterval);
+                rigidBall.velocity = new Vector3(xForce * 0.5f, yForce * 0.2f, zForce);
                 
                 //rigidBall.velocity.x
                 Debug.Log("going left" + -xForce);

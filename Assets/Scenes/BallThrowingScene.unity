@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1005,7 +1005,7 @@ MonoBehaviour:
   theColor: {fileID: 0}
   classicBall: {fileID: 2100000, guid: bedefed38834a3740b669ea78e3d284b, type: 2}
   redBall: {fileID: 2100000, guid: 23317ecdbef054547ba60b1e0dfd0a5c, type: 2}
-  yellowBall: {fileID: 2100000, guid: 7682012bd30a0412881da532f9b648a1, type: 2}
+  yellowBall: {fileID: 2100000, guid: 80f4feed7ef5946518da846f89f8c445, type: 2}
   greenBall: {fileID: 2100000, guid: e59fd4284adca4b97949852dbb9d338a, type: 2}
   blueBall: {fileID: 2100000, guid: 9ab47b170efa14c4eb8f4fb2983ee294, type: 2}
   purpleBall: {fileID: 2100000, guid: 234c66543059145608688251f847e4e2, type: 2}
@@ -2019,6 +2019,7 @@ GameObject:
   - component: {fileID: 1388233589}
   - component: {fileID: 1388233588}
   - component: {fileID: 1388233592}
+  - component: {fileID: 1388233593}
   m_Layer: 0
   m_Name: bottomBox
   m_TagString: Untagged
@@ -2100,6 +2101,25 @@ Transform:
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1388233592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388233587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593df44c1b1454f7493a792a7547d89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  theBall: {fileID: 0}
+  rb: {fileID: 0}
+  count: 0
+  dm: {fileID: 0}
+  startingPoint: {x: 0, y: 3.904, z: -45}
+  startingRotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1388233593
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
