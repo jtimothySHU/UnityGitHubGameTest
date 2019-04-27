@@ -107,7 +107,7 @@ public class throwBall : MonoBehaviour
 
              }
                   */
-            rigidBall.velocity = new Vector3(xForce * 0.5f, yForce * 0.2f, zForce * 0.4f);
+            rigidBall.velocity = new Vector3(xForce * 0.3f, yForce * 0.2f, zForce * 0.3f);
 
 
         }
