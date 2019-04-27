@@ -78,23 +78,36 @@ public class throwBall : MonoBehaviour
             rigidBall.AddForce(xForce, yForce, zForce / timeInterval);
             */
 
+
+            // old old throw code
+            /*
             if (startTouch.x >= endTouch.x)
             {
                 //rigidBall.AddForce(xForce, yForce, zForce / timeInterval);
                 //rigidBall.AddForce(Vector3.left);
-                rigidBall.velocity = new Vector3(xForce * 0.5f, yForce * 0.2f, zForce);
-                
-                //rigidBall.velocity.x
+
+
+                rigidBall.velocity = new Vector3(xForce * 0.5f, yForce * 0.2f, zForce * 0.4f);
                 Debug.Log("going left" + -xForce);
                 Debug.Log("xDistance: " + xDistance);
             }
             if (startTouch.x < endTouch.x)
             {
+                // old throwing code
+                /*
                 rigidBall.AddForce(xForce, yForce, zForce / timeInterval);
                 Debug.Log("going right");
                 Debug.Log("xDistance: " + xDistance);
 
-            }
+
+                rigidBall.velocity = new Vector3(xForce * 0.5f, yForce * 0.2f, zForce * 0.4f);
+
+
+ 
+
+             }
+                  */
+            rigidBall.velocity = new Vector3(xForce * 0.5f, yForce * 0.2f, zForce * 0.4f);
 
 
         }
