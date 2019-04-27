@@ -25,7 +25,7 @@ public class throwBall : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // if you touch the screen
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
@@ -80,8 +80,9 @@ public class throwBall : MonoBehaviour
 
             if (startTouch.x >= endTouch.x)
             {
-                rigidBall.AddForce(xForce, yForce, zForce / timeInterval);
-                rigidBall.AddForce(Vector3.left);
+                //rigidBall.AddForce(xForce, yForce, zForce / timeInterval);
+                //rigidBall.AddForce(Vector3.left);
+                rigidBall.velocity = new Vector3(xForce * -1, yForce, zForce / timeInterval);
                 
                 //rigidBall.velocity.x
                 Debug.Log("going left" + -xForce);
