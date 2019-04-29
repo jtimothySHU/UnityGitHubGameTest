@@ -108,6 +108,7 @@ public class throwBall : MonoBehaviour
              }
                   */
             rigidBall.velocity = new Vector3(xForce * 0.3f, yForce * 0.2f, zForce * 0.3f);
+            rigidBall.AddTorque(zForce, yForce, xForce);
 
 
         }
