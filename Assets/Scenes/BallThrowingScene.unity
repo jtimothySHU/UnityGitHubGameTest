@@ -977,12 +977,9 @@ GameObject:
   - component: {fileID: 518681544}
   - component: {fileID: 518681543}
   - component: {fileID: 518681548}
-  - component: {fileID: 518681547}
-  - component: {fileID: 518681549}
   - component: {fileID: 518681550}
   - component: {fileID: 518681551}
   - component: {fileID: 518681552}
-  - component: {fileID: 518681553}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Player
@@ -1062,18 +1059,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &518681547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518681542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85db8d02eaa5fc849b6752a5e1173ea2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &518681548
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1090,18 +1075,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &518681549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518681542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 351c242cfcbba454a82eadce5eba3e89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &518681550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1160,25 +1133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d88aee1d2eaae46169963ad2fc82eb1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &518681553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518681542}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 593df44c1b1454f7493a792a7547d89d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  theBall: {fileID: 0}
-  rb: {fileID: 0}
-  count: 0
-  dm: {fileID: 0}
-  startingPoint: {x: 0, y: 3.904, z: -45}
-  startingRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
