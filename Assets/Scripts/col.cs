@@ -40,6 +40,7 @@ public class col : MonoBehaviour
             dm.score += count;
             dm.numBalls -= 1;
             text.text = "Score: " + dm.score.ToString();
+            Debug.Log("Number of balls: " + dm.numBalls);
 
 
             //Failure screen 
