@@ -6,5 +6,8 @@ public class detectionManager : MonoBehaviour
 {
     //Score for all the targets
     public int score;
+
+    //Number of balls 
+    public int numBalls; 
    
 }

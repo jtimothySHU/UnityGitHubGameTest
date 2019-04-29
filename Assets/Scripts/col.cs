@@ -23,6 +23,7 @@ public class col : MonoBehaviour
          */
         text.text = "Score: " + dm.score.ToString();
         dm.score = 0;
+        dm.numBalls = 6;
     }
 
     private void OnCollisionEnter(Collision col)
@@ -37,7 +38,15 @@ public class col : MonoBehaviour
             theBall.GetComponent<Rigidbody>().Sleep();
             Debug.Log("Count: " + count);
             dm.score += count;
+            dm.numBalls -= 1;
             text.text = "Score: " + dm.score.ToString();
+
+
+            //Failure screen 
+            if(dm.numBalls == 0)
+            {
+                Application.LoadLevel("GameOver");
+            }
         }
     }
 }
