@@ -109,7 +109,7 @@ public class throwBall : MonoBehaviour
                   */
             if (rigidBall.velocity == Vector3.zero)
             {
-                rigidBall.velocity = new Vector3(xForce * 0.3f, yForce * 0.2f, zForce * 0.19f);
+                rigidBall.velocity = new Vector3(xForce * 0.24f, yForce * 0.2f, zForce * 0.19f);
                 rigidBall.AddTorque(rigidBall.velocity.z/2, rigidBall.velocity.y, rigidBall.velocity.z);
             }
 
