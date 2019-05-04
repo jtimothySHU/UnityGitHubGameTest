@@ -10,6 +10,4 @@ public class detectionManager : MonoBehaviour
     //Number of balls 
     public int numBalls;
 
- 
-
 }

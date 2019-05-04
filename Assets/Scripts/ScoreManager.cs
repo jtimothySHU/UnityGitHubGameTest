@@ -7,7 +7,7 @@ public class ScoreManager : MonoBehaviour
 {
 
     
-    public static int score;
+    public static int score = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +23,6 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score = col.count;
+      
     }
 }

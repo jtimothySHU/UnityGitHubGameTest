@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -221,6 +221,7 @@ MonoBehaviour:
   text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
+  count: 60
   dm: {fileID: 113196888}
   startingPoint: {x: 0, y: 3.904, z: -45}
   startingRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -628,6 +629,7 @@ MonoBehaviour:
   text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
+  count: 40
   dm: {fileID: 113196888}
   startingPoint: {x: 0, y: 3.904, z: -45}
   startingRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -760,6 +762,7 @@ MonoBehaviour:
   text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
+  count: 0
   dm: {fileID: 113196888}
   startingPoint: {x: 0, y: 3.904, z: -45}
   startingRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -930,6 +933,7 @@ MonoBehaviour:
   text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
+  count: 40
   dm: {fileID: 113196888}
   startingPoint: {x: 0, y: 3.904, z: -45}
   startingRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1490,6 +1494,7 @@ MonoBehaviour:
   text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
+  count: 0
   dm: {fileID: 113196888}
   startingPoint: {x: 0, y: 3.904, z: -45}
   startingRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -1645,6 +1650,7 @@ MonoBehaviour:
   text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
+  count: 20
   dm: {fileID: 113196888}
   startingPoint: {x: 0, y: 3.904, z: -45}
   startingRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2105,6 +2111,7 @@ MonoBehaviour:
   text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
+  count: 0
   dm: {fileID: 113196888}
   startingPoint: {x: 0, y: 3.904, z: -45}
   startingRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2144,6 +2151,7 @@ MonoBehaviour:
   text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
+  count: 20
   dm: {fileID: 113196888}
   startingPoint: {x: 0, y: 3.904, z: -45}
   startingRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2329,6 +2337,7 @@ MonoBehaviour:
   text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
+  count: 0
   dm: {fileID: 113196888}
   startingPoint: {x: 0, y: 3.904, z: -45}
   startingRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2441,6 +2450,7 @@ MonoBehaviour:
   text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
+  count: 10
   dm: {fileID: 113196888}
   startingPoint: {x: 0, y: 3.904, z: -45}
   startingRotation: {x: 0, y: 0, z: 0, w: 0}
@@ -2644,6 +2654,7 @@ MonoBehaviour:
   text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
+  count: 0
   dm: {fileID: 113196888}
   startingPoint: {x: 0, y: 3.904, z: -45}
   startingRotation: {x: 0, y: 0, z: 0, w: 0}
