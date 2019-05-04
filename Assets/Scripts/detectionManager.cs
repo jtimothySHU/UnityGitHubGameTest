@@ -8,6 +8,8 @@ public class detectionManager : MonoBehaviour
     public int score;
 
     //Number of balls 
-    public int numBalls; 
-   
+    public int numBalls;
+
+ 
+
 }

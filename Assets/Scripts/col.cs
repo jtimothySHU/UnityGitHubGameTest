@@ -10,7 +10,9 @@ public class col : MonoBehaviour
     public GameObject theBall;
     public Rigidbody rb;
    
-    public int count;
+
+    // changed count to static
+    public static int count;
     public detectionManager dm;
 
     public Vector3 startingPoint = new Vector3(0f, 3.904f, -45f);
@@ -53,4 +55,6 @@ public class col : MonoBehaviour
             }
         }
     }
+
+    
 }
