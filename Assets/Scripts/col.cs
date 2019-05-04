@@ -17,6 +17,8 @@ public class col : MonoBehaviour
     public Vector3 startingPoint = new Vector3(0f, 3.904f, -45f);
     public Quaternion startingRotation = new Quaternion(0,0,0,0);
 
+    private AudioSource source;
+
     private void Start()
     {
         /*
@@ -27,6 +29,9 @@ public class col : MonoBehaviour
         text2.text = "Balls Left: " + dm.numBalls.ToString();
         dm.score = 0;
         dm.numBalls = 6;
+
+        source = GetComponent<AudioSource>();
+
     }
 
     private void OnCollisionEnter(Collision col)
@@ -55,6 +60,7 @@ public class col : MonoBehaviour
 
             ScoreManager.score = dm.score;
             Debug.Log("ScoreManagerScore = " + ScoreManager.score);
+            source.Play();
         }
     }
 
