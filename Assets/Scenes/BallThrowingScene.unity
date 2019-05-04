@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -218,6 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
+  text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
   count: 60
@@ -379,7 +380,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1093614935}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -419,7 +420,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'POINTS: '
+  m_Text: 'POINTS:'
 --- !u!222 &234701636
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -625,12 +626,92 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
+  text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
   count: 40
   dm: {fileID: 113196888}
   startingPoint: {x: 0, y: 3.904, z: -45}
   startingRotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &364492322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 364492323}
+  - component: {fileID: 364492325}
+  - component: {fileID: 364492324}
+  m_Layer: 5
+  m_Name: Text2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &364492323
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364492322}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1093614935}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -30}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &364492324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364492322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'BALLS:'
+--- !u!222 &364492325
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364492322}
+  m_CullTransparentMesh: 0
 --- !u!1 &376546985
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,7 +725,6 @@ GameObject:
   - component: {fileID: 376546990}
   - component: {fileID: 376546989}
   - component: {fileID: 376546988}
-  - component: {fileID: 376546987}
   m_Layer: 0
   m_Name: behindBox
   m_TagString: Untagged
@@ -666,25 +746,6 @@ Transform:
   m_Father: {fileID: 113196889}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &376546987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376546985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 593df44c1b1454f7493a792a7547d89d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  theBall: {fileID: 0}
-  rb: {fileID: 0}
-  count: 0
-  dm: {fileID: 0}
-  startingPoint: {x: 0, y: 3.904, z: -45}
-  startingRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &376546988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,7 +758,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593df44c1b1454f7493a792a7547d89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  text: {fileID: 234701635}
+  text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
   count: 0
@@ -868,6 +930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
+  text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
   count: 50
@@ -1427,7 +1490,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593df44c1b1454f7493a792a7547d89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  text: {fileID: 234701635}
+  text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
   count: 0
@@ -1540,6 +1604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
+  text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
   count: 20
@@ -1818,6 +1883,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 364492323}
   - {fileID: 234701634}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -1906,7 +1972,6 @@ GameObject:
   - component: {fileID: 1308787620}
   - component: {fileID: 1308787619}
   - component: {fileID: 1308787623}
-  - component: {fileID: 1308787624}
   m_Layer: 0
   m_Name: leftBox
   m_TagString: Untagged
@@ -1999,26 +2064,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593df44c1b1454f7493a792a7547d89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  theBall: {fileID: 0}
-  rb: {fileID: 0}
-  count: 0
-  dm: {fileID: 0}
-  startingPoint: {x: 0, y: 3.904, z: -45}
-  startingRotation: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1308787624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308787618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 593df44c1b1454f7493a792a7547d89d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  text: {fileID: 234701635}
+  text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
   count: 0
@@ -2058,6 +2105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
+  text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
   count: 20
@@ -2150,7 +2198,6 @@ GameObject:
   - component: {fileID: 1388233589}
   - component: {fileID: 1388233588}
   - component: {fileID: 1388233592}
-  - component: {fileID: 1388233593}
   m_Layer: 0
   m_Name: bottomBox
   m_TagString: Untagged
@@ -2243,30 +2290,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593df44c1b1454f7493a792a7547d89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  text: {fileID: 234701635}
+  text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
   count: 0
   dm: {fileID: 113196888}
-  startingPoint: {x: 0, y: 3.904, z: -45}
-  startingRotation: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1388233593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388233587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 593df44c1b1454f7493a792a7547d89d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  theBall: {fileID: 0}
-  rb: {fileID: 0}
-  count: 0
-  dm: {fileID: 0}
   startingPoint: {x: 0, y: 3.904, z: -45}
   startingRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1564421027
@@ -2375,6 +2404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 234701635}
+  text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
   count: 10
@@ -2577,7 +2607,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 593df44c1b1454f7493a792a7547d89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  text: {fileID: 234701635}
+  text2: {fileID: 364492324}
   theBall: {fileID: 518681542}
   rb: {fileID: 0}
   count: 0

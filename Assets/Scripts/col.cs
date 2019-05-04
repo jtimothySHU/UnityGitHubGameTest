@@ -5,6 +5,7 @@ using UnityEngine;
 public class col : MonoBehaviour
 {
     public UnityEngine.UI.Text text;
+    public UnityEngine.UI.Text text2;
 
     public GameObject theBall;
     public Rigidbody rb;
@@ -22,6 +23,7 @@ public class col : MonoBehaviour
          * conventions
          */
         text.text = "Score: " + dm.score.ToString();
+        text2.text = "Balls Left: " + dm.numBalls.ToString();
         dm.score = 0;
         dm.numBalls = 6;
     }
@@ -40,6 +42,7 @@ public class col : MonoBehaviour
             dm.score += count;
             dm.numBalls -= 1;
             text.text = "Score: " + dm.score.ToString();
+            text2.text = "Balls Left: " + dm.numBalls.ToString();
             Debug.Log("Number of balls: " + dm.numBalls);
 
 
