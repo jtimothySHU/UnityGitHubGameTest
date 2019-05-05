@@ -44,12 +44,12 @@ public class col : MonoBehaviour
             // ballBody.velocity = Vector3.zero;
             // ballBody.Sleep();
             theBall.GetComponent<Rigidbody>().Sleep();
-            Debug.Log("Count: " + count);
+            //Debug.Log("Count: " + count);
             dm.score += count;
             dm.numBalls -= 1;
             text.text = "Score: " + dm.score.ToString();
             text2.text = "Balls Left: " + dm.numBalls.ToString();
-            Debug.Log("Number of balls: " + dm.numBalls);
+            //Debug.Log("Number of balls: " + dm.numBalls);
 
 
             //Failure screen 
@@ -59,8 +59,14 @@ public class col : MonoBehaviour
             }
 
             ScoreManager.score = dm.score;
-            Debug.Log("ScoreManagerScore = " + ScoreManager.score);
-            source.Play();
+            //Debug.Log("ScoreManagerScore = " + ScoreManager.score);
+
+            if (muteCheck.muteValue == false)
+            {
+                source.Play();
+
+            }
+
         }
     }
 
